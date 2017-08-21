@@ -10,7 +10,7 @@
 }
 
 h1 {
-  margin-top:0;
+  text-align:center;
 }
 
 .navbar {
@@ -33,6 +33,7 @@ img {
 p, li, div {
   font-size: 12pt;
   line-height: 20pt;
+  margin-bottom: 1em;
 }
 li {
   margin-bottom: 0.3em;
