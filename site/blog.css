@@ -1,30 +1,3 @@
-.bs-docs-header{
-  background-color: #DE5833;
-  color: white;
-  padding:20px;
-  margin-bottom: 20px;
-}
-
-.main-content{
-  margin-bottom: 200px;
-}
-
-h1 {
-  text-align:center;
-}
-
-.navbar {
-  margin-bottom:0;
-  border:0;
-}
-
-.center {
-  text-align:center;
-}
-
-img {
-  margin: 20px;
-}
 
 * {
   font-family: Open Sans, helvetica, arial;
@@ -35,6 +8,7 @@ p, li, div {
   line-height: 20pt;
   margin-bottom: 1em;
 }
+
 li {
   margin-bottom: 0.3em;
 }
@@ -42,22 +16,32 @@ p, pre {
   margin-bottom: 1.1em;
 }
 
-h2 {
-  border-bottom: 2px #DE5833 solid;
+.section__block {
+  display: flex;
+  align-items: center;
 }
-h2,h3,h4,h5,h6 {
-  /*font-family: Cambria;*/
+
+.section__title {
+  border-bottom: 2px #DE5833 solid;
   font-weight: 600;
   margin-top: 1.1em;
   margin-bottom: 1.0em;
   padding-bottom: 0.1em;
 }
 
-ul.nav li {
-  padding-bottom: 0;
-  margin-bottom: 0;
+.block__icon {
+  width: 50px;
+  margin: 20px;
 }
 
-img.pull-left {
-  max-width: 7%;
+.main-content{
+  margin-bottom: 200px;
+}
+
+.page-title {
+  text-align:center;
+}
+
+.center {
+  text-align:center;
 }
