@@ -57,3 +57,7 @@ ul.nav li {
   padding-bottom: 0;
   margin-bottom: 0;
 }
+
+img.pull-left {
+  max-width: 7%;
+}
