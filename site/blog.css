@@ -54,10 +54,6 @@
   margin-bottom: 200px;
 }
 
-.items {
-  margin-left: 50px;
-}
-
 .center {
   text-align: center;
 }
@@ -71,6 +67,7 @@
   display: table;
   transform: translate(-50%);
   margin-left: 50%;
+  margin-bottom: -20px;
 }
 /* black line at top */
 .privacy_hack_title:before {
@@ -137,6 +134,28 @@
 .privacy_hack_title .highlight,
 .blue_highlight .highlight {
   background-color: rgb(0, 190, 250);
+}
+.items li {
+  list-style: none;
+}
+.items a {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+.items li:hover a {
+  text-decoration: underline;
+}
+
+.items li::before {
+  content: "\0003E";
+  margin-right: 0.5em;
+}
+
+.items li:hover::before {
+  color: red;
 }
 
 .yellow_highlight .highlight {
