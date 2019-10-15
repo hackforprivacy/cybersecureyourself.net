@@ -16,6 +16,12 @@
   font-weight: 300;
 }
 
+@media only screen  and (min-width : 768px) {
+  .section {
+  display:flex;
+  }
+}
+
 .section__content {
   border-top: 2px #DE5833 solid;
   margin: 0 20px;
@@ -26,7 +32,13 @@
   align-items: center;
 }
 
+.section:nth-child(odd) .section__title {
+  background-color: pink;
+  order:0;
+}
+
 .section__title {
+  background-color: yellow;
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
   font-weight: 600;
@@ -34,6 +46,7 @@
   margin-bottom: 0;
   padding: 8px 0;
   text-transform: uppercase;
+  order: 1;
 }
 
 .block__text {
