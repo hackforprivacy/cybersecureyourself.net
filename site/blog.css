@@ -7,7 +7,6 @@
 }
 
 .section__content {
-  border-top: 2px #de5833 solid;
   margin: 0 20px;
 }
 
@@ -17,7 +16,7 @@
 }
 
 .section:nth-child(odd) .section__title {
-  background-color: pink;
+  background-color: red;
   order: 0;
 }
 
@@ -26,9 +25,9 @@
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   font-weight: 600;
-  margin-left: 90px;
   margin-bottom: 0;
   padding: 8px 0;
+  text-align: center;
   text-transform: uppercase;
   order: 1;
 }
@@ -53,6 +52,10 @@
 }
 .main-content {
   margin-bottom: 200px;
+}
+
+.items {
+  margin-left: 50px;
 }
 
 .center {
@@ -151,6 +154,11 @@
 
   .highlight {
     font-size: 60px;
+  }
+
+  .items {
+    margin-left: 50%;
+    transform: translate(-50%);
   }
 
   .first_line {
