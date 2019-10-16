@@ -139,23 +139,19 @@
   list-style: none;
 }
 .items a {
-  text-decoration: none;
   color: black;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 600;
+  text-decoration: none;
 }
 .items li:hover a {
-  text-decoration: underline;
+  background-color: #ffed00;
 }
 
 .items li::before {
   content: "\0003E";
   margin-right: 0.5em;
-}
-
-.items li:hover::before {
-  color: red;
 }
 
 .yellow_highlight .highlight {
