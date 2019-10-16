@@ -69,10 +69,14 @@
 
 .privacy_hack_title {
   display: table;
+}
+
+h1.privacy_hack_title {
   transform: translate(-50%);
   margin-left: 50%;
   margin-bottom: -20px;
 }
+
 /* black line at top */
 .privacy_hack_title:before {
   border-top: 5px solid black;
