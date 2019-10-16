@@ -1,6 +1,6 @@
 .main-content {
   max-width: 1000px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 .section {
@@ -112,7 +112,7 @@ h2.privacy_hack_title .highlight {
 
 .highlight {
   color: white;
-  background-color:#ffed00;
+  background-color: #ffed00;
   padding: 10px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
@@ -137,7 +137,7 @@ h2.privacy_hack_title .highlight {
 .privacy_hack_title span:nth-child(3) {
   padding-right: 0.5em;
   margin-right: 1em;
-  top: -.8em;
+  top: -0.8em;
 }
 
 h1.privacy_hack_title span:nth-child(2) {
@@ -175,7 +175,6 @@ h2.privacy_hack_title span:nth-child(3) {
   margin-right: 0.5em;
 }
 @media only screen and (min-width: 600px) {
-
   .privacy_hack_title {
     margin-left: 90px;
   }
@@ -197,14 +196,14 @@ h2.privacy_hack_title span:nth-child(3) {
 
   h2.privacy_hack_title span:nth-child(2) {
     padding-right: 0.7em;
-    top: .4em;
-    margin-left: .2em;
+    top: 0.4em;
+    margin-left: 0.2em;
   }
 
   h2.privacy_hack_title span:nth-child(3) {
     padding-right: 0.5em;
     padding-left: 0;
-    top: .4em;
+    top: 0.4em;
     left: 0;
   }
 }
@@ -222,7 +221,7 @@ h2.privacy_hack_title span:nth-child(3) {
 
   .highlight {
     font-size: 60px;
-    padding:15px;
+    padding: 15px;
   }
 
   .items {
@@ -234,6 +233,14 @@ h2.privacy_hack_title span:nth-child(3) {
     font-size: 96px;
     left: 50%;
     transform: translate(-50%, 10%);
+  }
+
+  h2.privacy_hack_title .first_line {
+    font-size: 60px;
+  }
+
+  h2.privacy_hack_title .highlight {
+    font-size: 40px;
   }
 
   .privacy_hack_title::before {
@@ -248,8 +255,23 @@ h2.privacy_hack_title span:nth-child(3) {
     top: -0.66em;
   }
 
+  h1.privacy_hack_title span:nth-child(2) {
+    top: -0.5em;
+  }
+
   h2.privacy_hack_title span:nth-child(2) {
     top: -0.5em;
+  }
+
+  h1.privacy_hack_title span:nth-child(3) {
+    top: -0.8em;
+  }
+
+  h2.privacy_hack_title span:nth-child(3) {
+    padding-right: 0.5em;
+    padding-left: 0.2em;
+    top: -0.8em;
+    left: 0;
   }
 
   .privacy_hack_title:before {
