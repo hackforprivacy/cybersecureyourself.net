@@ -22,12 +22,10 @@
 }
 
 .section:nth-child(odd) .section__title {
-  background-color: red;
   order: 0;
 }
 
 .section__title {
-  background-color: yellow;
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   font-weight: 600;
@@ -36,7 +34,6 @@
   text-align: center;
   text-transform: uppercase;
   order: 1;
-  width: 100%
 }
 
 .block__text {
@@ -52,7 +49,7 @@
 }
 
 .icon-label {
-  display: flex;
+  display: none;
   flex-direction: column;
   font-size: 12px;
   min-width: 50px; /* 2 * icon width */
@@ -69,22 +66,21 @@
 
 .privacy_hack_title {
   display: table;
+  margin-left: 40px;
 }
 
-h1.privacy_hack_title {
-  transform: translate(-50%);
-  margin-left: 50%;
-  margin-bottom: -20px;
+h1.privacy_hack_title .highlight {
+  background-color: rgb(0, 190, 250);
 }
 
 /* black line at top */
 .privacy_hack_title:before {
-  border-top: 5px solid black;
+  border-top: 3px solid black;
   content: "";
   display: block;
   padding-top: 5px;
-  margin-left: 50%;
-  width: 50%;
+  margin: 0 auto;
+  width: 70%;
 }
 
 /* All elements in the heading */
@@ -92,19 +88,32 @@ h1.privacy_hack_title {
   display: table;
   position: relative;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .first_line {
   font-family: "Oswald", sans-serif;
   font-size: 60px;
   font-weight: 400;
-  left: 50%;
-  transform: translate(-50%, 10%);
+}
+
+h2.privacy_hack_title .first_line {
+  font-size: 30px;
+  white-space: nowrap;
+}
+
+h2.privacy_hack_title .highlight {
+  font-size: 18px;
+}
+
+.section:nth-child(odd) .highlight {
+  background-color: #ca0001;
 }
 
 .highlight {
   color: white;
-  padding: 15px;
+  background-color:#ffed00;
+  padding: 10px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: 900;
@@ -128,21 +137,25 @@ h1.privacy_hack_title {
 .privacy_hack_title span:nth-child(3) {
   padding-right: 0.5em;
   margin-right: 1em;
-  top: -1em;
+  top: -.8em;
 }
 
-.privacy_hack_title span:nth-child(4) {
-  padding-right: 0.5em;
-  margin-right: 1em;
-  top: -1.33em;
+h1.privacy_hack_title span:nth-child(2) {
+  top: -0.8em;
 }
 
-/* pass colour red, yellow or blue to div class  - default to blue */
-
-.privacy_hack_title .highlight,
-.blue_highlight .highlight {
-  background-color: rgb(0, 190, 250);
+h1.privacy_hack_title span:nth-child(3) {
+  top: -1.1em;
 }
+
+h2.privacy_hack_title span:nth-child(2) {
+  top: -0.8em;
+}
+
+h2.privacy_hack_title span:nth-child(3) {
+  top: -1.1em;
+}
+
 .items li {
   list-style: none;
 }
@@ -161,16 +174,42 @@ h1.privacy_hack_title {
   content: "\0003E";
   margin-right: 0.5em;
 }
+@media only screen and (min-width: 600px) {
 
-.yellow_highlight .highlight {
-  background-color: #ffed00;
+  .privacy_hack_title {
+    margin-left: 90px;
+  }
+
+  .icon-label {
+    display: flex;
+  }
+
+  .privacy_hack_title {
+    transform: translate(-50%);
+    margin-left: 50%;
+  }
+
+  h2.privacy_hack_title {
+    display: flex;
+    transform: none;
+    margin-left: 0;
+  }
+
+  h2.privacy_hack_title span:nth-child(2) {
+    padding-right: 0.7em;
+    top: .4em;
+    margin-left: .2em;
+  }
+
+  h2.privacy_hack_title span:nth-child(3) {
+    padding-right: 0.5em;
+    padding-left: 0;
+    top: .4em;
+    left: 0;
+  }
 }
 
-.red_highlight .highlight {
-  background-color: #ca0001;
-}
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
   .section {
     display: flex;
   }
@@ -183,6 +222,7 @@ h1.privacy_hack_title {
 
   .highlight {
     font-size: 60px;
+    padding:15px;
   }
 
   .items {
@@ -192,14 +232,33 @@ h1.privacy_hack_title {
 
   .first_line {
     font-size: 96px;
-    transform: translate(-50%, 0);
+    left: 50%;
+    transform: translate(-50%, 10%);
   }
 
   .privacy_hack_title::before {
     border-top: 10px solid black;
   }
 
+  h2.privacy_hack_title {
+    display: table;
+  }
+
   .privacy_hack_title span:nth-child(2) {
     top: -0.66em;
+  }
+
+  h2.privacy_hack_title span:nth-child(2) {
+    top: -0.5em;
+  }
+
+  .privacy_hack_title:before {
+    border-width: 5px;
+    margin-left: 50%;
+    width: 50%;
+  }
+
+  .privacy_hack_title span:nth-child(3) {
+    top: -1em;
   }
 }
