@@ -1,3 +1,8 @@
+.main-content {
+  max-width: 1000px;
+  margin:0 auto;
+}
+
 .section {
   padding-right: 20px;
   margin-top: 35px;
@@ -8,6 +13,7 @@
 
 .section__content {
   margin: 0 20px;
+  width: 100%;
 }
 
 .section__block {
@@ -30,6 +36,7 @@
   text-align: center;
   text-transform: uppercase;
   order: 1;
+  width: 100%
 }
 
 .block__text {
@@ -49,9 +56,6 @@
   flex-direction: column;
   font-size: 12px;
   min-width: 50px; /* 2 * icon width */
-}
-.main-content {
-  margin-bottom: 200px;
 }
 
 .center {
@@ -165,6 +169,12 @@
 @media only screen and (min-width: 768px) {
   .section {
     display: flex;
+  }
+  .section__content {
+    width: 60%;
+  }
+  .section__title {
+    width: 40%;
   }
 
   .highlight {
