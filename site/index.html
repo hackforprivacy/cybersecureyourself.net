@@ -7,7 +7,7 @@
     <title>CyberSecure Yourself</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600,900|Oswald:400&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link href="blog.css" rel="stylesheet">
@@ -31,81 +31,59 @@
   </head>
   <body>
     <div class="main-content">
+      <header>
+        <h1 class="privacy_hack_title">
+          <span class="first_line">how to</span>
+          <span class="highlight" data-content="cybersecure">cybersecure</span>
+          <span class="highlight" data-content="yourself">yourself</span>
+        </h1>
+      </header>
+      <nav class="items">
+        <ul>
+            <li><a href="#pm">Get a password manager</a></li>
+            <li><a href="#2fa">Enable Two-Factor Authentication (2FA)</a></li>
+            <li><a href="#vpn">Get a Virtual Private Network (VPN)</a></li>
+            <li><a href="#patch">Turn on patching (automatic system updates)</a></li>
+            <li><a href="#app">Install an encrypted messaging app</a></li>
+            <li><a href="#social">Check your social media privacy settings</a></li>
+            <li><a href="#track">Check your tracking settings</a></li>
+            <li> <a href="#read">Further reading</a></li>
+        </ul>
+
+      </nav>
       <div class="container">
-
-        <h1 class="page-title">CyberSecure Yourself</h1>
-
         <!-- ---------------------------------- -->
-        <div class="section">
-          <h2 class="section__title">Check your social media privacy settings</h2>
-          <div class="section__content">
-            <div class="section__block">
-              <img src="images/balance-scale-regular.svg" class="block__icon">
-              <p class="block__text">
-                Often, social media settings expose your information to people or organisations that you didn't intend to share it with. Unfortunately, the settings on many social media sites are over-complicated, making it very difficult to control how your data is used.
-              </p>
-            </div>
-            <div class="section__block">
-              <img src="images/tasks-regular.svg" class="block__icon">
-              <p class="block__text">
-                  Click through the settings to the security and privacy options on your social media accounts. For Facebook, read <a href="https://heimdalsecurity.com/blog/facebook-security-privacy-guide/">this guide</a> on how to regain control of how (and by whom) your information, images and data are used.
-              </p>
-            </div>
-            <div class="section__block">
-              <img src="images/stopwatch-regular.svg" class="block__icon">
-              <p class="block__text">
-                  5-10 minutes for most, and 15-30 minutes for Facebook.
-              </p>
-            </div>
+        <div class="section" id="pm">
+          <div>
+              <h2 class="section__title privacy_hack_title">
+                  <span class="first_line">Get a</span>
+                  <span class="highlight" data-content="password">password</span>
+                  <span class="highlight" data-content="manager">manager</span>
+              </h2>
           </div>
-        </div>
-
-        <!-- ---------------------------------- -->
-        <div class="section">
-          <h2 class="section__title">Check your tracking settings</h2>
-          <div class="section__content">
-            <div class="section__block">
-              <img src="images/balance-scale-regular.svg" class="block__icon">
-              <p class="block__text">
-                You probably don't realise how much information Google, Facebook, and some other organisations have about you. Their business model is to target advertising as narrowly as possible to demographics and specific interests, which relies on tracking your web browsing, searches, and interactions with other people.
-              </p>
-            </div>
-
-            <div class="section__block">
-              <img src="images/tasks-regular.svg" class="block__icon">
-              <p class="block__text">
-                Check what data Google has about you using <a href="https://myactivity.google.com/myactivity">My Activity</a>, then use their <a href="https://myaccount.google.com/privacycheckup">Privacy Checkup</a> to walk through the options for enabling or disabling each type of tracking (note: unfortunately, Facebook doesn't offer an equivalent to My Activity, and doesn't let you configure tracking to this level). Try using a tracker blocking browser add-on: <a href="https://itunes.apple.com/us/app/1blocker/id1025729002?mt=8">1Blocker</a> on iPhone, <a href="https://play.google.com/store/apps/details?id=com.ghostery.android.ghostery">Ghostery</a> on Android, or <a href="https://disconnect.me/freeprotection">Disconnect</a> on your computer. You can also try a privacy-respecting search engine like <a href="https://duckduckgo.com">DuckDuckGo</a>.
-              </p>
-            </div>
-
-            <div class="section__block">
-              <img src="images/stopwatch-regular.svg" class="block__icon">
-              <p class="block__text">
-                20-30 minutes.
-              </p>
-            </div>
-
-          </div>
-        </div>
-        
-        <!-- ---------------------------------- -->
-
-        <div class="section">
-            <h2 class="section__title">Get a password manager</h2>
             <div class="section__content">
-
                 <div class="section__block">
-                  <img src="images/balance-scale-regular.svg" class="block__icon">
+                  <div class="icon-label">
+                      <img src="images/balance-scale-regular.svg" class="block__icon">
+                      <span class="label">What?</span>
+                  </div>
                     <p class="block__text"> Instead of using the same old passwords over and over again, use a password manager to generate and safely store unique and strong passwords for different websites. Having unique, strong passwords helps prevent hackers from using your data that has been breached or stolen from one website to access your accounts on other websites. Check <a href="https://haveibeenpwned.com">haveibeenpwned.com</a> to see if you've already been breached.</p>
                 </div>
 
                 <div class="section__block">
-                  <img src="images/tasks-regular.svg" class="block__icon">
+                    <div class="icon-label">
+                        <img src="images/tasks-regular.svg" class="block__icon">
+                        <span class="label">How?</span>
+                    </div>
+
                   <p class="block__text">Try <a href="https://www.1password.com">1Password</a>, <a href="https://www.lastpass.com">LastPass</a>, or <a href="https://www.dashlane.com">Dashlane</a>.</p>
                 </div>
 
                 <div class="section__block">
-                  <img src="images/stopwatch-regular.svg" class="block__icon">
+                    <div class="icon-label">
+                        <img src="images/stopwatch-regular.svg" class="block__icon">
+                        <span class="label">Time</span>
+                    </div>
                   <p class="block__text">Only takes 10 minutes to set up.</p>
                 </div>
             </div>
@@ -113,26 +91,36 @@
 
         <!-- ---------------------------------- -->
 
-        <div class="section">
-          <h2 class="section__title">Enable Two-Factor Authentication (2FA)</h2>
+        <div class="section" id="2fa">
+          <h2 class="section__title privacy_hack_title">
+            <span class="first_line">Enable</span>
+            <span class="highlight" data-content="Two-Factor">Two-Factor</span>
+            <span class="highlight" data-content="Authentication (2FA)">Authentication (2FA)</span></h2>
             <div class="section__content">
               <div class="section__block">
-                <img src="images/balance-scale-regular.svg" class="block__icon">
+                  <div class="icon-label">
+                      <img src="images/balance-scale-regular.svg" class="block__icon">
+                      <span class="label">What?</span>
+                  </div>
                 <p class="block__text">
                 Instead of using just a password for your important accounts, add a safety net to protect your personal information by enabling 2FA. This adds an extra layer of protection; any potential hacker has to both <strong>know</strong> your password and <strong>have</strong> your phone.
                </p>
               </div>
 
               <div class="section__block">
-                <img src="images/tasks-regular.svg" class="block__icon">
-                <p class="block__text">
+                  <div class="icon-label">
+                      <img src="images/tasks-regular.svg" class="block__icon">
+                      <span class="label">How?</span>
+                  </div>                <p class="block__text">
                   Download an authenticator app: try Google Authenticator (<a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en">Android</a>, <a href="https://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8">iPhone</a>) or Authy (<a href="https://play.google.com/store/apps/details?id=com.authy.authy">Android</a> , <a href="https://itunes.apple.com/us/app/authy/id494168017?mt=8">iPhone</a>). Find instructions for enabling 2FA for each account you care about on <a href="https://www.twofactorauth.org">twofactorauth.org</a>. Always remember to write down recovery (backup) codes or, if using Authy, enable backups.
                 </p>
               </div>
 
               <div class="section__block">
-                <img src="images/stopwatch-regular.svg" class="block__icon">
-                <p class="block__text">
+                  <div class="icon-label">
+                      <img src="images/stopwatch-regular.svg" class="block__icon">
+                      <span class="label">Time</span>
+                  </div>                <p class="block__text">
                   Approximately 10 minutes per website.
                 </p>
               </div>
@@ -140,26 +128,36 @@
         </div>
 
         <!-- ---------------------------------- -->
-        <div class="section">
-          <h2 class="section__title">Get a Virtual Private Network (VPN)</h2>
+        <div class="section" id="vpn">
+            <h2 class="section__title privacy_hack_title">
+                <span class="first_line">Get a</span>
+                <span class="highlight" data-content="virtual private">Virtual Private</span>
+                <span class="highlight" data-content="network (VPN)">Network (VPN)</span></h2>
           <div class="section__content">
             <div class="section__block">
-                <img src="images/balance-scale-regular.svg" class="block__icon">
+                <div class="icon-label">
+                    <img src="images/balance-scale-regular.svg" class="block__icon">
+                    <span class="label">What?</span>
+                </div>
                 <p class="block__text">
                   Using a VPN prevents your web browsing metadata from being retained. <a href="https://robindoherty.com/2015/10/07/your-digital-privacy-ends-this-time-next-week.html">Data retention</a> is a form of mass surveillance.
                 </p>
               </div>
 
               <div class="section__block">
-                <img src="images/tasks-regular.svg" class="block__icon">
-                <p class="block__text">
+                  <div class="icon-label">
+                      <img src="images/tasks-regular.svg" class="block__icon">
+                      <span class="label">How?</span>
+                  </div>                <p class="block__text">
                   Try <a href="https://www.privateinternetaccess.com">Private Internet Access</a> or <a href="https://www.tunnelbear.com">TunnelBear</a>.
                 </p>
               </div>
 
               <div class="section__block">
-                <img src="images/stopwatch-regular.svg" class="block__icon">
-                <p class="block__text">
+                  <div class="icon-label">
+                      <img src="images/stopwatch-regular.svg" class="block__icon">
+                      <span class="label">Time</span>
+                  </div>                <p class="block__text">
                   Approximately 10-30 minutes, depending on the extent of your research.
                 </p>
               </div>
@@ -168,50 +166,71 @@
 
         <!-- ---------------------------------- -->
 
-        <div class="section">
-            <h2 class="section__title">Turn on patching (automatic system updates)</h2>
+        <div class="section" id="patch">
+            <h2 class="section__title privacy_hack_title">
+                <span class="first_line">Turn on</span>
+                <span class="highlight" data-content="patching">patching</span>
+                <span class="highlight" data-content="(automatic system updates)">(automatic system updates)</span></h2>
             <div class="section__content">
               <div class="section__block">
-                <img src="images/balance-scale-regular.svg" class="block__icon">
+                  <div class="icon-label">
+                      <img src="images/balance-scale-regular.svg" class="block__icon ">
+                      <span class="label">What?</span>
+                  </div>
                 <p class="block__text">
                   Security patches need to be applied regularly to update your system, so that when new viruses, malware and worms are invented you’ve got all of the latest security holes plugged, keeping yourself safe from the hackers.
                 </p>
               </div>
 
               <div class="section__block">
-                <img src="images/tasks-regular.svg" class="block__icon">
-                <p class="block__text">
-                    Follow these instructions for enabling automatic system updates on <a href="http://osxdaily.com/2014/11/01/automatic-install-os-x-updates-mac/">mac OS</a>.
+                  <div class="icon-label">
+                      <img src="images/tasks-regular.svg" class="block__icon">
+                      <span class="label">How?</span>
+                  </div>
+                  <p class="block__text">
+                    Follow these instructions for enabling automatic system updates on <a href="http://osxdaily.com/2014/11/01/automatic-install-os-x-updates-mac/">mac OS</a>. Check back later for Windows instructions.
                 </p>
               </div>
 
               <div class="section__block">
-                <img src="images/stopwatch-regular.svg" class="block__icon">
-                <p class="block__text">5 minutes.</p>
+                  <div class="icon-label">
+                      <img src="images/stopwatch-regular.svg" class="block__icon">
+                      <span class="label">Time</span>
+                  </div>
+                  <p class="block__text">5 minutes.</p>
               </div>
           </div>
         </div>
 
         <!-- ---------------------------------- -->
-        <div class="section">
-          <h2 class="section__title">Install an encrypted messaging app</h2>
+        <div class="section" id="app">
+          <h2 class="section__title privacy_hack_title">
+              <span class="first_line">Install an</span>
+              <span class="highlight" data-content="encrypted">encrypted</span>
+              <span class="highlight" data-content="messaging app">messaging app</span></h2>
           <div class="section__content">
             <div class="section__block">
-              <img src="images/balance-scale-regular.svg" class="block__icon">
-              <p class="block__text">
+                <div class="icon-label">
+                    <img src="images/balance-scale-regular.svg" class="block__icon">
+                    <span class="label">What?</span>
+                </div>              <p class="block__text">
                   Using an encrypted messaging app means that only the people you actually send your messages to can read them.  It guarantees the privacy of your communication, and the best apps, like Signal, offer some protection for the privacy of your messaging metadata (compared with WhatsApp, which <a href="https://hackforprivacy.org/post/whatsapp.html">shares your data with Facebook</a>).
               </p>
             </div>
             <div class="section__block">
-              <img src="images/tasks-regular.svg" class="block__icon">
-              <p class="block__text">
+                <div class="icon-label">
+                    <img src="images/tasks-regular.svg" class="block__icon">
+                    <span class="label">How?</span>
+                </div>              <p class="block__text">
                   Download the Signal app (<a href="https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms">Android</a>, <a href="https://itunes.apple.com/us/app/signal-private-messenger/id874139669">iPhone</a>), then tell your friends to get Signal too!
                   More detailed instructions can be found on the Surveillance Self-Defense website for <a href="https://ssd.eff.org/en/module/how-use-signal-android">Android</a> or <a href="https://ssd.eff.org/en/module/how-use-signal-ios">iPhone</a>.
               </p>
             </div>
             <div class="section__block">
-              <img src="images/stopwatch-regular.svg" class="block__icon">
-              <p class="block__text">
+                <div class="icon-label">
+                    <img src="images/stopwatch-regular.svg" class="block__icon">
+                    <span class="label">Time</span>
+                </div>              <p class="block__text">
                   10-15 minutes.
               </p>
             </div>
@@ -220,9 +239,95 @@
 
 
         <!-- ---------------------------------- -->
+        <div class="section" id="social">
+          <h2 class="section__title privacy_hack_title">
+              <span class="first_line">Check your</span>
+              <span class="highlight" data-content="social media">social media</span>
+              <span class="highlight" data-content="privacy settings">privacy settings</span></h2>
+          <div class="section__content">
+            <div class="section__block">
+                <div class="icon-label">
+                    <img src="images/balance-scale-regular.svg" class="block__icon">
+                    <span class="label">What?</span>
+                </div>              <p class="block__text">
+                Often, social media settings expose your information to people or organisations that you didn't intend to share it with. Unfortunately, the settings on many social media sites are over-complicated, making it very difficult to control how your data is used.
+              </p>
+            </div>
+            <div class="section__block">
+                <div class="icon-label">
+                    <img src="images/tasks-regular.svg" class="block__icon">
+                    <span class="label">How?</span>
+                </div>              <p class="block__text">
+                  Click through the settings to the security and privacy options on your social media accounts. For Facebook, read <a href="https://heimdalsecurity.com/blog/facebook-security-privacy-guide/">this guide</a> on how to regain control of how (and by whom) your information, images and data are used.
+              </p>
+            </div>
+            <div class="section__block">
+                <div class="icon-label">
+                    <img src="images/stopwatch-regular.svg" class="block__icon">
+                    <span class="label">Time</span>
+                </div>              <p class="block__text">
+                  5-10 minutes for most, and 15-30 minutes for Facebook.
+              </p>
+            </div>
+          </div>
+        </div>
 
+        <!-- ---------------------------------- -->
+        <div class="section" id="track">
+          <h2 class="section__title privacy_hack_title">
+              <span class="first_line">Check your</span>
+              <span class="highlight" data-content="tracking">tracking</span>
+              <span class="highlight" data-content="settings">settings</span></h2>
+          <div class="section__content">
+            <div class="section__block">
+                <div class="icon-label">
+                    <img src="images/balance-scale-regular.svg" class="block__icon">
+                    <span class="label">What?</span>
+                </div>              <p class="block__text">
+                You probably don't realise how much information Google, Facebook, and some other organisations have about you. Their business model is to target advertising as narrowly as possible to demographics and specific interests, which relies on tracking your web browsing, searches, and interactions with other people.
+              </p>
+            </div>
+
+            <div class="section__block">
+                <div class="icon-label">
+                    <img src="images/tasks-regular.svg" class="block__icon">
+                    <span class="label">How?</span>
+                </div>              <p class="block__text">
+                Check what data Google has about you using <a href="https://myactivity.google.com/myactivity">My Activity</a>, then use their <a href="https://myaccount.google.com/privacycheckup">Privacy Checkup</a> to walk through the options for enabling or disabling each type of tracking (note: unfortunately, Facebook doesn't offer an equivalent to My Activity, and doesn't let you configure tracking to this level). Try using a tracker blocking browser add-on: <a href="https://itunes.apple.com/us/app/1blocker/id1025729002?mt=8">1Blocker</a> on iPhone, <a href="https://play.google.com/store/apps/details?id=com.ghostery.android.ghostery">Ghostery</a> on Android, or <a href="https://disconnect.me/freeprotection">Disconnect</a> on your computer. You can also try a privacy-respecting search engine like <a href="https://duckduckgo.com">DuckDuckGo</a>.
+              </p>
+            </div>
+
+            <div class="section__block">
+                <div class="icon-label">
+                    <img src="images/stopwatch-regular.svg" class="block__icon">
+                    <span class="label">Time</span>
+                </div>              <p class="block__text">
+                20-30 minutes.
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <!-- ---------------------------------- -->
         <div class="section">
-        <h2 class="section__title">Further reading</h2>
+          <h2 class="section__title privacy_hack_title">
+              <span class="highlight" data-content="screenshots">Screenshots</span></h2>
+          <div class="section__content">
+          <p>Check back soon for quick screenshot-based walkthroughs:</p>
+          <ul>
+            <li>Using Signal</li>
+            <li>Two-factor authentication on Facebook with SMS</li>
+            <li>Two-factor authentication on Google with the Google Authenticator app</li>
+            <li>Password management using LastPass</li>
+          </ul>
+          </div>
+        </div>
+
+        <!-- ---------------------------------- -->
+        <div class="section" id="read">
+        <h2 class="section__title privacy_hack_title">
+            <span class="first_line">Further</span>
+            <span class="highlight" data-content="reading">reading</span></h2>
         <div class="section__content">
           <ul>
             <li><a href="https://hackblossom.org/cybersecurity/">A DIY Guide to Feminist Cybersecurity</a>
@@ -232,9 +337,10 @@
             <li><a href="https://pursuit.unimelb.edu.au/articles/what-kind-of-rear-window-into-encryption-do-the-five-eyes-want">What kind of rear window into encryption do the Five Eyes want?</a></li>
           </ul>
         </div>
-        <br/><hr/><br/>
-        <p class="center">Brought to you by <a href="https://hackforprivacy.org">Hack for Privacy</a> and <a href="https://blueprintforfreespeech.net">Blueprint for Free Speech</a>.</p>
         </div>
+        <footer>
+          <p class="center">Brought to you by <a href="https://hackforprivacy.org">Hack for Privacy</a> and <a href="https://blueprintforfreespeech.net">Blueprint for Free Speech</a>.</p>
+        </footer>
       </div>
     </div>
   </body>
