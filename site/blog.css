@@ -1,3 +1,10 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
 .main-content {
   max-width: 1000px;
   margin: 0 auto;
@@ -6,9 +13,10 @@
 .section {
   padding-right: 20px;
   margin-top: 35px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
+}
+
+.section:last-child {
+  padding-bottom: 20px;
 }
 
 .section__content {
@@ -31,14 +39,12 @@
   font-weight: 600;
   margin-bottom: 0;
   padding: 8px 0;
-  text-align: center;
   text-transform: uppercase;
   order: 1;
 }
 
 .block__text {
-  font-family: "Montserrat", sans-serif;
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .block__icon {
@@ -65,15 +71,9 @@
 }
 
 .privacy_hack_title {
-  display: table;
-  margin-left: 40px;
+  margin: 0 20px -20px 20px;
 }
 
-h1.privacy_hack_title .highlight {
-  background-color: rgb(0, 190, 250);
-}
-
-/* black line at top */
 .privacy_hack_title:before {
   border-top: 3px solid black;
   content: "";
@@ -83,50 +83,11 @@ h1.privacy_hack_title .highlight {
   width: 70%;
 }
 
-/* All elements in the heading */
 .privacy_hack_title span {
   display: table;
   position: relative;
   text-transform: uppercase;
   white-space: nowrap;
-}
-
-.first_line {
-  font-family: "Oswald", sans-serif;
-  font-size: 60px;
-  font-weight: 400;
-}
-
-h2.privacy_hack_title .first_line {
-  font-size: 30px;
-  white-space: nowrap;
-}
-
-h2.privacy_hack_title .highlight {
-  font-size: 18px;
-}
-
-.section:nth-child(odd) .highlight {
-  background-color: #ca0001;
-}
-
-.highlight {
-  color: white;
-  background-color: #ffed00;
-  padding: 10px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  font-weight: 900;
-  mix-blend-mode: multiply;
-}
-
-.highlight::after {
-  color: black;
-  content: attr(data-content);
-  white-space: nowrap;
-  position: absolute;
-  transform: translate(-99%, 10%);
-  z-index: -1;
 }
 
 .privacy_hack_title span:nth-child(2) {
@@ -156,13 +117,64 @@ h2.privacy_hack_title span:nth-child(3) {
   top: -1.1em;
 }
 
+.first_line {
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+h2.privacy_hack_title .first_line {
+  font-size: 30px;
+  white-space: nowrap;
+}
+
+.highlight {
+  color: white;
+  background-color: #ffed00;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  mix-blend-mode: multiply;
+}
+
+h1.privacy_hack_title .highlight {
+  background-color: rgb(0, 190, 250);
+}
+
+h2.privacy_hack_title .highlight {
+  font-size: 18px;
+}
+
+.section:nth-child(odd) .highlight {
+  background-color: #ca0001;
+}
+
+.highlight::after {
+  color: black;
+  content: attr(data-content);
+  white-space: nowrap;
+  position: absolute;
+  transform: translate(-99%, 10%);
+  z-index: -1;
+}
+
+.items {
+  margin: 0 20px 0 -20px;
+}
+
 .items li {
   list-style: none;
+}
+
+.items li::before {
+  content: "\0003E";
+  margin-right: 0.5em;
 }
 .items a {
   color: black;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: inherit;
   font-weight: 600;
   text-decoration: none;
 }
@@ -170,17 +182,32 @@ h2.privacy_hack_title span:nth-child(3) {
   background-color: #ffed00;
 }
 
-.items li::before {
-  content: "\0003E";
-  margin-right: 0.5em;
+.reading_list {
+  padding: 20px;
 }
-@media only screen and (min-width: 600px) {
-  .privacy_hack_title {
-    margin-left: 90px;
-  }
 
+footer {
+  padding: 20px;
+  border-top: black 1px solid;
+}
+
+@media only screen and (min-width: 400px) {
   .icon-label {
     display: flex;
+    padding: 10px;
+  }
+}
+@media only screen and (min-width: 650px) {
+  body {
+    font-size: 16px;
+  }
+
+  .section__title {
+    padding: 30px 0;
+  }
+
+  .privacy_hack_title {
+    margin-left: 90px;
   }
 
   .privacy_hack_title {
@@ -224,35 +251,26 @@ h2.privacy_hack_title span:nth-child(3) {
     padding: 15px;
   }
 
-  .items {
-    margin-left: 50%;
-    transform: translate(-50%);
-  }
-
-  .first_line {
-    font-size: 96px;
-    left: 50%;
-    transform: translate(-50%, 10%);
-  }
-
-  h2.privacy_hack_title .first_line {
-    font-size: 60px;
-  }
-
-  h2.privacy_hack_title .highlight {
-    font-size: 40px;
-  }
-
-  .privacy_hack_title::before {
-    border-top: 10px solid black;
-  }
-
   h2.privacy_hack_title {
     display: table;
   }
 
+  .privacy_hack_title::before {
+    border-width: 5px;
+    margin-left: 50%;
+    width: 50%;
+  }
+
+  h2.privacy_hack_title::before {
+    margin: 0;
+  }
+
   .privacy_hack_title span:nth-child(2) {
     top: -0.66em;
+  }
+
+  .privacy_hack_title span:nth-child(3) {
+    top: -1em;
   }
 
   h1.privacy_hack_title span:nth-child(2) {
@@ -274,13 +292,23 @@ h2.privacy_hack_title span:nth-child(3) {
     left: 0;
   }
 
-  .privacy_hack_title:before {
-    border-width: 5px;
-    margin-left: 50%;
-    width: 50%;
+  h2.privacy_hack_title .highlight {
+    font-size: 40px;
   }
 
-  .privacy_hack_title span:nth-child(3) {
-    top: -1em;
+  .first_line {
+    font-size: 96px;
+    left: 50%;
+    transform: translate(-50%, 10%);
   }
+
+  h2.privacy_hack_title .first_line {
+    font-size: 60px;
+  }
+
+  .items {
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+
 }
