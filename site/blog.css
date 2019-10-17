@@ -191,18 +191,23 @@ footer {
   border-top: black 1px solid;
 }
 
-
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 400px) {
+  .icon-label {
+    display: flex;
+    padding: 10px;
+  }
+}
+@media only screen and (min-width: 650px) {
   body {
     font-size: 16px;
   }
 
-  .privacy_hack_title {
-    margin-left: 90px;
+  .section__title {
+    padding: 30px 0;
   }
 
-  .icon-label {
-    display: flex;
+  .privacy_hack_title {
+    margin-left: 90px;
   }
 
   .privacy_hack_title {
