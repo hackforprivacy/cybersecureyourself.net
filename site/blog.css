@@ -1,3 +1,8 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
 .main-content {
   max-width: 1000px;
   margin: 0 auto;
@@ -6,9 +11,6 @@
 .section {
   padding-right: 20px;
   margin-top: 35px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
 }
 
 .section__content {
@@ -37,7 +39,6 @@
 }
 
 .block__text {
-  font-family: "Montserrat", sans-serif;
   margin-left: 20px;
 }
 
@@ -108,6 +109,9 @@ h2.privacy_hack_title .highlight {
 
 .section:nth-child(odd) .highlight {
   background-color: #ca0001;
+}
+.section:last-child {
+  padding-bottom: 20px;
 }
 
 .highlight {
@@ -283,4 +287,9 @@ h2.privacy_hack_title span:nth-child(3) {
   .privacy_hack_title span:nth-child(3) {
     top: -1em;
   }
+}
+
+footer {
+  padding: 20px 0;
+  border-top: black 1px solid;
 }
