@@ -165,11 +165,16 @@ h2.privacy_hack_title .highlight {
 
 .items li {
   list-style: none;
+  line-height: 1.5;
+  padding-left: 1.2em;
+  text-indent: -1.2em;
 }
 
 .items li::before {
-  content: "\0003E";
-  margin-right: 0.5em;
+  content: ">";
+  display: block;
+  float: left;
+  width: 1.2em;
 }
 .items a {
   color: black;
